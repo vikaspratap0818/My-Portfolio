@@ -12,57 +12,70 @@
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.7.0/fonts/remixicon.css" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
 </head>
 
 <body>
 
     <!-- Navigation -->
-    <nav class="navbar">
+    <nav class="navbar hover-fade">
         <div class="nav-container">
-            <div class="nav-logo">VP</div>
+            <div class="nav-logo hover-scale-sm">VP</div>
+
             <ul class="nav-menu">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="#home" class="hover-underline hover-scale-sm">Home</a></li>
+                <li><a href="#about" class="hover-underline hover-scale-sm">About</a></li>
+                <li><a href="#experience" class="hover-underline hover-scale-sm">Experience</a></li>
+                <li><a href="#skills" class="hover-underline hover-scale-sm">Skills</a></li>
+                <li><a href="#projects" class="hover-underline hover-scale-sm">Projects</a></li>
+                <li><a href="#contact" class="hover-underline hover-scale-sm">Contact</a></li>
             </ul>
-            <div class="hamburger">
+
+            <div class="hamburger hover-scale-sm">
                 <span></span>
                 <span></span>
                 <span></span>
             </div>
+
         </div>
     </nav>
+
+
     <!-- Hero/About Section -->
 
-    <section id="home" class="hero">
-        <div class="hero-content">
-            <img src="./profileimg.jpg" alt="Vikas Pratap Profile Picture" class="profile-img">
-            <h1>Vikas Pratap</h1>
-            <div class="tagline">
+    <section id="home" class="hero hover-reveal">
+        <div class="hero-left">
+            <h1 class="hover-lift">Vikas Pratap</h1>
+
+            <div class="tagline hover-fade">
                 I am a <span id="typed-text"></span><span class="typed-cursor">|</span>
             </div>
 
-            <p class="bio">I’m a passionate B.Tech student with a strong interest in AI, machine learning, and
-                full-stack development.</p>
+            <p class="bio hover-fade">
+                I’m a passionate B.Tech student with a strong interest in AI, machine learning,
+                and full-stack development.
+            </p>
+        </div>
+
+        <div class="hero-right hover-float">
+            <spline-viewer url="https://prod.spline.design/BoWg-dch2T9e59sl/scene.splinecode"></spline-viewer>
         </div>
     </section>
+
     <!-- About Section -->
     <section id="about" class="section about">
-        <h2 class="section-title">About Me</h2>
-        <p class="about-text">I’m a driven B.Tech student at Rajkiya Engineering College, Azamgarh, specializing in
-            Information Technology (2023-2026). My coursework includes Operating Systems, DSA, OOPs, DBMS, and Computer
-            Networking. I thrive on solving complex problems, as evidenced by solving 300+ problems on GeeksforGeeks and
-            earning 4 stars in Java/C and 3 stars in Python on HackerRank.</p>
+        <h2 class="section-title hover-underline">About Me</h2>
+        <p class="about-text hover-fade">I’m a driven B.Tech student at Rajkiya Engineering College, Azamgarh,
+            specializing in Information Technology (2023-2026). My coursework includes Operating Systems, DSA, OOPs,
+            DBMS, and Computer Networking. I thrive on solving complex problems, as evidenced by solving 300+ problems
+            on GeeksforGeeks and earning 4 stars in Java/C and 3 stars in Python on HackerRank.</p>
     </section>
 
     <!-- Experience Section -->
     <section id="experience" class="section experience">
-        <h2 class="section-title">Work Experience</h2>
+        <h2 class="section-title hover-underline">Work Experience</h2>
         <div class="grid">
-            <div class="card glow-card">
+            <div class="card glow-card hover-scale hover-lift">
                 <i class="fas fa-tools"></i>
                 <h3>Assistant Engineer - Dixon Technologies Pvt. Ltd</h3>
                 <p>March 2022 - April 2023</p>
@@ -74,30 +87,30 @@
 
     <!-- Skills Section -->
     <section id="skills" class="section skills">
-        <h2 class="section-title">Skills</h2>
+        <h2 class="section-title hover-underline">Skills</h2>
         <div class="grid">
-            <div class="card glow-card">
+            <div class="card glow-card hover-scale hover-lift">
                 <h3>Front-End Development</h3>
                 <div class="progress-bar">
                     <div class="progress" style="width: 0;"></div>
                 </div>
                 <p>HTML/CSS/JavaScript, React.js</p>
             </div>
-            <div class="card glow-card">
+            <div class="card glow-card hover-scale hover-lift">
                 <h3>Back-End Development</h3>
                 <div class="progress-bar">
                     <div class="progress" style="width: 0;"></div>
                 </div>
                 <p>MongoDB, MySQL, Python (Django/Flask), Java</p>
             </div>
-            <div class="card glow-card">
+            <div class="card glow-card hover-scale hover-lift">
                 <h3>Programming & Concepts</h3>
                 <div class="progress-bar">
                     <div class="progress" style="width: 0;"></div>
                 </div>
                 <p>Python, Java, Code Structure, Web Performance</p>
             </div>
-            <div class="card glow-card">
+            <div class="card glow-card hover-scale hover-lift">
                 <h3>Tools</h3>
                 <div class="progress-bar">
                     <div class="progress" style="width: 0;"></div>
@@ -109,79 +122,77 @@
 
     <!-- Projects Section -->
     <section id="projects" class="section projects">
-        <h2 class="section-title">Projects</h2>
+        <h2 class="section-title hover-underline">Projects</h2>
         <div class="project-grid">
-            <div class="project-card">
+            <div class="project-card hover-tilt hover-glow hover-zoom">
                 <div class="project-mockup">
-                    <img src="/image.png" alt="Face Recognition Project">
+                    <img class="hover-zoom hover-shine" src="/image.png">
                 </div>
                 <h3>Real-Time Face Recognition Attendance Management</h3>
-                <p>Automates attendance using Face Recognition with Haar Cascade and LBPH algorithms, storing data in
-                    MySQL or CSV. Tech: Python, OpenCV, Android Studio.</p>
+                <p>Automates attendance using Face Recognition with Haar Cascade and LBPH algorithms.</p>
                 <div class="project-links">
                     <a href="https://github.com/vikaspratap0818/face_recognition_project-main" target="_blank"><i
-                            class="fab fa-github"></i></a>
+                            class="fab fa-github hover-scale-sm"></i></a>
                 </div>
             </div>
-            <div class="project-card">
+
+            <div class="project-card hover-tilt hover-glow hover-zoom">
                 <div class="project-mockup">
-                    <img src="/Cargame.png" alt="Car Racing Game">
+                    <img class="hover-zoom" src="/Cargame.png">
                 </div>
                 <h3>Car Racing Game</h3>
-                <p>Interactive 2D game with collision detection and dynamic speed. Tech: HTML5, CSS3, Vanilla
-                    JavaScript.</p>
+                <p>Interactive 2D game with collision detection and dynamic speed.</p>
                 <div class="project-links">
                     <a href="https://github.com/vikaspratap0818/Car-Racing-Game-HTML5-CSS3-JavaScript"
-                        target="_blank"><i class="fab fa-github"></i></a>
+                        target="_blank"><i class="fab fa-github hover-scale-sm"></i></a>
                 </div>
             </div>
-            <div class="project-card">
+
+            <div class="project-card hover-tilt hover-glow hover-zoom">
                 <div class="project-mockup">
-                    <img src="/todo.png" alt="To-Do List App">
+                    <img class="hover-zoom" src="/todo.png">
                 </div>
                 <h3>Smart To-Do List</h3>
-                <p>Task app with reminders, drag-and-drop, and dark/light mode. Tech: React.js, Tailwind CSS, Framer
-                    Motion.</p>
+                <p>Task app with reminders, drag-and-drop, and dark/light mode.</p>
                 <div class="project-links">
                     <a href="https://github.com/vikaspratap0818/To-Do-list--App" target="_blank"><i
-                            class="fab fa-github"></i></a>
+                            class="fab fa-github hover-scale-sm"></i></a>
                 </div>
             </div>
-            <div class="project-card">
+
+            <div class="project-card hover-tilt hover-glow hover-zoom">
                 <div class="project-mockup">
-                    <img src="/Tictoctoe.png" alt="Tic Tac Toe Game">
+                    <img class="hover-zoom" src="/Tictoctoe.png">
                 </div>
                 <h3>Tic Tac Toe Game</h3>
-                <p>Enhanced game with Minimax AI and animations. Tech: HTML5, CSS3, Vanilla JavaScript.</p>
+                <p>Enhanced game with Minimax AI and animations.</p>
                 <div class="project-links">
                     <a href="https://github.com/vikaspratap0818/Tic-toc-toe-game-" target="_blank"><i
-                            class="fab fa-github"></i></a>
+                            class="fab fa-github hover-scale-sm"></i></a>
                 </div>
             </div>
-            <div class="project-card">
+
+            <div class="project-card hover-tilt hover-glow hover-zoom">
                 <div class="project-mockup">
-                    <img src="/SnakeGame.png" alt="Resume Screening App">
+                    <img class="hover-zoom" src="/SnakeGame.png">
                 </div>
                 <h3>Snake-Js-Playground</h3>
-                <p>A modern take on the classic Snake Game, built using HTML, CSS, and JavaScript.
-                    Features include a clean UI, game modals, score tracking, high score storage, and a timer system —
-                    all running smoothly in the browser.</p>
+                <p>Modern Snake Game with clean UI, modals, score tracking & high score.</p>
                 <div class="project-links">
                     <a href="https://github.com/vikaspratap0818/Snake-Js-Playground" target="_blank"><i
-                            class="fab fa-github"></i></a>
+                            class="fab fa-github hover-scale-sm"></i></a>
                 </div>
             </div>
-            <div class="project-card">
+
+            <div class="project-card hover-tilt hover-glow hover-zoom">
                 <div class="project-mockup">
-                    <img src="/WeatherApp.png" alt="Weather-App">
+                    <img class="hover-zoom" src="/WeatherApp.png">
                 </div>
                 <h3>Weather-App</h3>
-                <p>A simple and responsive Weather App built with HTML, CSS, and JavaScript that fetches real-time
-                    weather data from the OpenWeatherMap API . The app also supports dark mode toggle for a modern user
-                    experience.</p>
+                <p>Responsive weather app with API & dark mode toggle.</p>
                 <div class="project-links">
                     <a href="https://github.com/vikaspratap0818/Weather-App" target="_blank"><i
-                            class="fab fa-github"></i></a>
+                            class="fab fa-github hover-scale-sm"></i></a>
                 </div>
             </div>
         </div>
@@ -189,29 +200,32 @@
 
     <!-- Connect With Me Section -->
     <section id="connect" class="section connect">
-        <h2 class="section-title">Connect With Me</h2>
+        <h2 class="section-title hover-underline">Connect With Me</h2>
         <div class="social-grid">
-            <a href="https://www.instagram.com/vikas081897/" target="_blank" class="card glow-card">
+            <a href="https://www.instagram.com/vikas081897/" target="_blank"
+                class="card glow-card hover-lift hover-scale">
                 <i class="fab fa-instagram"></i>
                 <p>Instagram</p>
             </a>
-            <a href="https://www.linkedin.com/in/vikaspratap/" target="_blank" class="card glow-card">
+            <a href="https://www.linkedin.com/in/vikaspratap/" target="_blank"
+                class="card glow-card hover-lift hover-scale">
                 <i class="fab fa-linkedin"></i>
                 <p>LinkedIn</p>
             </a>
-            <a href="https://github.com/vikaspratap0818" target="_blank" class="card glow-card">
+            <a href="https://github.com/vikaspratap0818" target="_blank" class="card glow-card hover-lift hover-scale">
                 <i class="fab fa-github"></i>
                 <p>GitHub</p>
             </a>
-            <a href="https://www.geeksforgeeks.org/user/vikasprh08r/" target="_blank" class="card glow-card">
+            <a href="https://www.geeksforgeeks.org/user/vikasprh08r/" target="_blank"
+                class="card glow-card hover-lift hover-scale">
                 <i class="fas fa-code"></i>
                 <p>GeeksforGeeks</p>
             </a>
-            <a href="https://x.com/VikasPrata31178" target="_blank" class="card glow-card">
-                <i data-v-6332e192="" class="ri-twitter-x-line"></i>
+            <a href="https://x.com/VikasPrata31178" target="_blank" class="card glow-card hover-lift hover-scale">
+                <i class="ri-twitter-x-line"></i>
                 <p>X</p>
             </a>
-            <a href="/cv (1).pdf" target="_blank" class="card glow-card">
+            <a href="/cv (1).pdf" target="_blank" class="card glow-card hover-lift hover-scale">
                 <i class="fas fa-file-pdf"></i>
                 <p>Resume</p>
             </a>
@@ -220,65 +234,74 @@
 
     <!-- Call-to-Action Section -->
     <section id="cta" class="section cta">
-        <h2 class="section-title">Ready to Collaborate?</h2>
-        <p class="cta-text">Let's build something amazing together!</p>
-        <a href="#contact" class="btn">Get in Touch</a>
+        <h2 class="section-title hover-underline">Ready to Collaborate?</h2>
+        <p class="cta-text hover-fade">Let's build something amazing together!</p>
+        <a href="#contact" class="btn ripple magnet hover-glow hover-scale">Get in Touch</a>
     </section>
 
     <!-- Contact Section -->
     <section id="contact" class="section contact">
-        <h2 class="section-title">Contact Me</h2>
-        <form class="contact-form">
+        <h2 class="section-title hover-underline">Contact Me</h2>
+        <form class="contact-form hover-scale-sm">
             <input type="text" placeholder="Your Name" required>
             <input type="email" placeholder="Your Email" required>
             <textarea placeholder="Your Message" rows="5" required></textarea>
-            <button type="submit">Send Message</button>
+            <button type="submit" class="ripple hover-glow hover-scale">Send Message</button>
         </form>
-        <p class="contact-info">Email: vikaspratap14@gmail.com | Phone: +91 7054970818 | Location: Lucknow, Uttar
-            Pradesh, India</p>
+        <p class="contact-info hover-fade">Email: vikaspratap14@gmail.com | Phone: +91 7054970818 | Location: Lucknow,
+            Uttar Pradesh, India</p>
     </section>
+
     <script>
-        const words = ['Frontend Developer', 'Backend Developer', 'Web Designer', 'AI-Powered Web Developer'];
+        const words = [
+            "Frontend Developer",
+            "Backend Developer",
+            "Full Stack Developer",
+            "AI-Powered Web Developer"
+        ];
+
         let wordIndex = 0;
         let charIndex = 0;
-        const typedText = document.getElementById('typed-text');
-        const cursor = document.querySelector('.typed-cursor');
+        const typedText = document.getElementById("typed-text");
+        const cursor = document.querySelector(".typed-cursor");
 
-        function type() {
+        function typeEffect() {
             if (charIndex < words[wordIndex].length) {
                 typedText.textContent += words[wordIndex].charAt(charIndex);
                 charIndex++;
-                setTimeout(type, 100); // Adjust typing speed
+                setTimeout(typeEffect, 80);
             } else {
-                setTimeout(erase, 1500); // Wait before erasing
+                setTimeout(deleteEffect, 1200);
             }
         }
 
-        function erase() {
+        function deleteEffect() {
             if (charIndex > 0) {
                 typedText.textContent = words[wordIndex].substring(0, charIndex - 1);
                 charIndex--;
-                setTimeout(erase, 50); // Adjust erasing speed
+                setTimeout(deleteEffect, 40);
             } else {
                 wordIndex = (wordIndex + 1) % words.length;
-                setTimeout(type, 500); // Wait before typing next word
+                setTimeout(typeEffect, 400);
             }
         }
 
-        // Start typing effect
-        document.addEventListener('DOMContentLoaded', () => {
-            setTimeout(type, 500);
+        document.addEventListener("DOMContentLoaded", () => {
+            setTimeout(typeEffect, 500);
         });
-
     </script>
-    <footer class="text-center py-6 bg-blue-800 dark:bg-gray-950 text-white relative">
+
+    <footer class="text-center py-6 bg-blue-800 dark:bg-gray-950 text-white relative hover-fade">
         <p class="mb-1">&copy; 2025 All rights reserved.</p>
         <p class="text-sm opacity-80">
             Created with <span class="heart">❤️</span> by
-            <span class="font-semibold text-pink-400 hover:text-pink-500 transition">Vikas</span>
+            <span class="font-semibold text-pink-400 hover-scale-sm transition">Vikas</span>
         </p>
     </footer>
+
     <script src="script.js"></script>
+    <script type="module" src="https://unpkg.com/@splinetool/viewer@1.9.48/build/spline-viewer.js"></script>
+
 </body>
 
 </html>
