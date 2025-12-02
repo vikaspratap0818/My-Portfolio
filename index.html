@@ -20,7 +20,7 @@
     <!-- Navigation -->
     <nav class="navbar hover-fade">
         <div class="nav-container">
-            <div class="nav-logo hover-scale-sm">VP</div>
+            <div class="nav-logo hover-scale-sm">Vikas Pratap</div>
 
             <ul class="nav-menu">
                 <li><a href="#home" class="hover-underline hover-scale-sm">Home</a></li>
@@ -45,10 +45,11 @@
 
     <section id="home" class="hero hover-reveal">
         <div class="hero-left">
+            <img src="./profileimg.jpg" alt="">
             <h1 class="hover-lift">Vikas Pratap</h1>
 
             <div class="tagline hover-fade">
-                I am a <span id="typed-text"></span><span class="typed-cursor">|</span>
+                I am a <span id="typed-text">|</span><span class="typed-cursor"></span>
             </div>
 
             <p class="bio hover-fade">
@@ -94,28 +95,28 @@
                 <div class="progress-bar">
                     <div class="progress" style="width: 0;"></div>
                 </div>
-                <p>HTML/CSS/JavaScript, React.js</p>
+                <p>HTML, CSS3, JavaScript, React.js, Tailwind </p>
             </div>
             <div class="card glow-card hover-scale hover-lift">
                 <h3>Back-End Development</h3>
                 <div class="progress-bar">
                     <div class="progress" style="width: 0;"></div>
                 </div>
-                <p>MongoDB, MySQL, Python (Django/Flask), Java</p>
+                <p>Node.js, MongoDB, MySQL, Python (Flask), Java, Docker, Kubernetes</p>
             </div>
             <div class="card glow-card hover-scale hover-lift">
                 <h3>Programming & Concepts</h3>
                 <div class="progress-bar">
                     <div class="progress" style="width: 0;"></div>
                 </div>
-                <p>Python, Java, Code Structure, Web Performance</p>
+                <p>Python, Java, Code Structure, DataStructure , OOPs, Computer Networks</p>
             </div>
             <div class="card glow-card hover-scale hover-lift">
                 <h3>Tools</h3>
                 <div class="progress-bar">
                     <div class="progress" style="width: 0;"></div>
                 </div>
-                <p>IntelliJ, Git/GitHub, VS Code, Jupyter, Wireshark, QualNet</p>
+                <p>IntelliJ, Git/GitHub, VS Code, Jupyter, Wireshark, QualNet, MongoDb Compass, Postman, NPM , CodePen</p>
             </div>
         </div>
     </section>
@@ -251,45 +252,7 @@
         <p class="contact-info hover-fade">Email: vikaspratap14@gmail.com | Phone: +91 7054970818 | Location: Lucknow,
             Uttar Pradesh, India</p>
     </section>
-
-    <script>
-        const words = [
-            "Frontend Developer",
-            "Backend Developer",
-            "Full Stack Developer",
-            "AI-Powered Web Developer"
-        ];
-
-        let wordIndex = 0;
-        let charIndex = 0;
-        const typedText = document.getElementById("typed-text");
-        const cursor = document.querySelector(".typed-cursor");
-
-        function typeEffect() {
-            if (charIndex < words[wordIndex].length) {
-                typedText.textContent += words[wordIndex].charAt(charIndex);
-                charIndex++;
-                setTimeout(typeEffect, 80);
-            } else {
-                setTimeout(deleteEffect, 1200);
-            }
-        }
-
-        function deleteEffect() {
-            if (charIndex > 0) {
-                typedText.textContent = words[wordIndex].substring(0, charIndex - 1);
-                charIndex--;
-                setTimeout(deleteEffect, 40);
-            } else {
-                wordIndex = (wordIndex + 1) % words.length;
-                setTimeout(typeEffect, 400);
-            }
-        }
-
-        document.addEventListener("DOMContentLoaded", () => {
-            setTimeout(typeEffect, 500);
-        });
-    </script>
+    
 
     <footer class="text-center py-6 bg-blue-800 dark:bg-gray-950 text-white relative hover-fade">
         <p class="mb-1">&copy; 2025 All rights reserved.</p>
