@@ -140,8 +140,8 @@ body {
 }
 
 .hero-left img {
-  width: 220px;
-    height: 220px;
+  height: 31vh;
+  width: 15vw;
   border-radius: 50%;
   margin-left: 50px;
   border: 2px solid rgb(218, 144, 249);
@@ -696,3 +696,4 @@ body {
 .magnet:hover {
   transform: translateY(-4px) scale(1.05);
 }
+
