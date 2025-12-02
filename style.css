@@ -146,12 +146,6 @@ body {
   margin-left: 50px;
   border: 2px solid rgb(218, 144, 249);
 }
-@media (min-width: 1500px) {
-  .hero-left img {
-    width: 280px;
-    height: 280px;
-  }
-}
 /* Left text section */
 .hero-left {
   flex: 1;
@@ -696,4 +690,5 @@ body {
 .magnet:hover {
   transform: translateY(-4px) scale(1.05);
 }
+
 
